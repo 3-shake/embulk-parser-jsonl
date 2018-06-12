@@ -18,8 +18,6 @@ module Embulk
           rows << JSON.parse(line)
         end
 
-        return {} if rows.size <= 3
-
         columns = Embulk::Guess::SchemaGuess.from_hash_records(rows).map do |c|
           column = {name: c.name, type: c.type}
           column[:format] = c.format if c.format
