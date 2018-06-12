@@ -1,13 +1,13 @@
 
 Gem::Specification.new do |spec|
-  spec.name          = "embulk-parser-jsonl"
-  spec.version       = "0.2.0"
-  spec.authors       = ["Shunsuke Mikami"]
+  spec.name          = "embulk-parser-jsonline"
+  spec.version       = "0.2.2"
+  spec.authors       = ["locona"]
   spec.summary       = "Jsonl parser plugin for Embulk"
   spec.description   = "Parses Jsonl files read by other file input plugins."
-  spec.email         = ["shun0102@gmail.com"]
+  spec.email         = ["locona.0810@gmail.com"]
   spec.licenses      = ["MIT"]
-  spec.homepage      = "https://github.com/shun0102/embulk-parser-jsonl"
+  spec.homepage      = "https://github.com/3-shake/embulk-parser-jsonline"
 
   spec.files         = `git ls-files`.split("\n") + Dir["classpath/*.jar"]
   spec.test_files    = spec.files.grep(%r{^(test|spec)/})
@@ -15,5 +15,4 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', ['~> 1.0']
   spec.add_development_dependency 'rake', ['~> 10.0']
-  spec.add_runtime_dependency 'jar-dependencies', "~> 0.3.11"
 end
